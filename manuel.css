@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172b27;
+  background: #ffffff;
+}
+
+/* Navigation */
+.navbar {
+  height: 58px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.logo {
+  color: #00754a;
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  height: 100%;
+  align-items: center;
+}
+
+nav a {
+  color: #222;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav a:nth-child(2) {
+  border-bottom: 3px solid #00754a;
+}
+
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 8px 14px;
+}
+
+.sign-in {
+  background: white;
+  border: 1px solid #222;
+}
+
+.join-small {
+  color: white;
+  background: #000;
+  border: none;
+}
+
+/* Dunkelgrüner Balken */
+.rewards-bar {
+  height: 27px;
+  padding: 7px 9%;
+  background: #1e3932;
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Hauptbereich */
+.hero {
+  height: 425px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #d4e9e2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 24px;
+  max-width: 380px;
+}
+
+.hero-content h1 {
+  font-size: 20px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 11px;
+  margin-bottom: 16px;
+}
+
+.join-button {
+  color: white;
+  background: #00754a;
+  border: none;
+  padding: 6px 12px;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.star-container {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  right: -250px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.star-layer {
+  position: absolute;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 94%,
+    50% 72%,
+    21% 94%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.star-gold {
+  inset: -80px;
+  background: #d9a441;
+}
+
+.star-dark {
+  inset: 50px;
+  background: #1e3932;
+}
+
+.star-light {
+  inset: 50px;
+  background: #d4e9e2;
+}
+
+.star-green {
+  inset: 50px;
+  background: #00754a;
+}
+
+.star-light-center {
+  inset: 50px;
+  background: #d9a441;
+}
+
+.star-dark-center {
+  inset: 50px;
+  background: #1e3932;
+}
+
+.star-light-center-zwei {
+  inset: 50px;
+  background: #d4e9e2;
+}
+
+.star-green-center {
+  inset: 50px;
+  background: #00754a;
+}
+
+.star-gold-center {
+  inset: 50px;
+  background: #d9a441;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 12px;
+    gap: 12px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  .nav-right span {
+    display: none;
+  }
+
+  .hero {
+    min-height: 500px;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    padding-top: 50px;
+  }
+
+  .star-container {
+    width: 350px;
+    height: 350px;
+    right: -150px;
+    top: auto;
+    bottom: -80px;
+    transform: none;
+  }
+}
+
+/* zweiter Bereich /*
+
+
+/* Rewards-Bereich */
+.rewards {
+  width: 100%;
+  background: #d5e9e2;
+  color: #172b27;
+}
+
+/* Überschrift und Stern-Auswahl */
+.rewards-header {
+  background: #f1f7f5;
+  text-align: center;
+  padding-top: 27px;
+  box-shadow: 0 2px 4px #00000010;
+}
+
+.rewards-header h2 {
+  font-size: 15px;
+  margin-bottom: 23px;
+}
+
+.rewards-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.rewards-tabs span {
+  width: 74px;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+
+.rewards-tabs span.active {
+  border-bottom-color: #00754a;
+}
+
+.rewards-tabs small {
+  color: #c99b3b;
+  font-size: 8px;
+}
+
+/* Inhalt unterhalb der Tabs */
+.rewards-content {
+  min-height: 147px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 24px;
+}
+
+.drink-images {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.rewards-description {
+  max-width: 220px;
+}
+
+.rewards-description h3 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.rewards-description p {
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+/* Mobile-Ansicht */
+@media (max-width: 600px) {
+  .rewards-content {
+    gap: 25px;
+    padding: 20px 12px;
+  }
+
+  .rewards-tabs span {
+    width: 20%;
+  }
+
+  .rewards-description {
+    max-width: 190px;
+  }
+}
+
+/* Getränke nebeneinander */
+
+.drink-images {
+  width: 190px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coffee-drinks {
+  width: 190px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Rewards-Bereich an die Vorlage anpassen */
+.rewards {
+  width: 100%;
+  background: #d5e9e2;
+  color: #172b27;
+  margin: 0;
+}
+
+/* Heller Kopfbereich */
+.rewards-header {
+  background: #f1f8f6;
+  text-align: center;
+  padding-top: 26px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Überschrift */
+.rewards-header h2 {
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+/* Stern-Auswahl */
+.rewards-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.rewards-tabs span {
+  width: 74px;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+
+.rewards-tabs span.active {
+  border-bottom-color: #00754a;
+}
+
+/* Seitenhintergrund korrigieren */
+html {
+  background: #ffffff;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* Hauptbereich und Rewards ohne Außenabstand */
+.hero,
+.rewards {
+  margin: 0;
+  width: 100%;
+}
+
+/* Helle Rewards-Kopfzeile */
+.rewards-header {
+  background-color: #f1f8f6;
+}
+
+/* Mintgrüner Getränkebereich */
+.rewards-content {
+  background-color: #d4e9e2;
+}

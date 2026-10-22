@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,43 +8,138 @@
     <link rel="stylesheet" href="aleksandra.css" />
     <link rel="stylesheet" href="manuel.css" />
     <link rel="stylesheet" href="lennart.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Abschnitt 2 -->
-    <div class="container2">
-      <div class="abschnitt2">
-        <h2 id="ab2">Getting started is easy</h2>
-        <p id="p-ab2">Earn Stars and get rewarded in a few easy steps.</p>
-        <div class="steps-container">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-title">Create an account</div>
-            <p class="step-description">
-              To get started, <a href="?" class="ola">join now.</a> You can also
-              <a href="?" class="ola">join in the app</a> to get access to the
-              full range of Starbucks<sup>®</sup> Rewards benefits.
-            </p>
-          </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-title">Order and pay how you'd like</div>
-            <p class="step-description">
-              Use cash, credit/debit card or save some time and pay right
-              through the app. You'll collect Stars all ways.
-              <a href="?" class="ola">Learn how.</a>
-            </p>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-title">Earn Stars, get Rewards</div>
-            <p class="step-description">
-              As you earn Stars, you can redeem them for Rewards - like free
-              food, drinks, and more. Start redeeming with as little as 25
-              Stars!
-            </p>
+    <header class="navbar">
+      <div class="logo">☕</div>
+
+      <nav>
+        <a href="#">MENU</a>
+        <a href="#">REWARDS</a>
+        <a href="#">GIFT CARDS</a>
+      </nav>
+
+      <div class="nav-right">
+        <span>📍 Find a store</span>
+        <button class="sign-in">Sign In</button>
+        <button class="join-small">Join now</button>
+      </div>
+    </header>
+    <main>
+      <div class="rewards-bar">STARBUCKS' REWARDS</div>
+
+      <div class="hero">
+        <section class="hero-content">
+          <h1>FREE COFFEE<br />IS A TAP AWAY</h1>
+
+          <p>Join now to start earning Rewards.</p>
+
+          <button class="join-button">Join now</button>
+
+          <p>Or join in the app for the best experience</p>
+        </section>
+
+        <div class="star-container">
+          <div class="star-layer star-gold">
+            <div class="star-layer star-dark">
+              <div class="star-layer star-light">
+                <div class="star-layer star-green">
+                  <div class="star-layer star-light-center">
+                    <div class="star-layer star-dark-center">
+                      <div class="star-layer star-light-center-zwei">
+                        <div class="star-layer star-green-center">
+                          <div class="star-layer star-gold-center"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- Abschnitt 2 -->
+      <div class="container2">
+        <div class="abschnitt2">
+          <h2 id="ab2">Getting started is easy</h2>
+          <p id="p-ab2">Earn Stars and get rewarded in a few easy steps.</p>
+          <div class="steps-container">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-title">Create an account</div>
+              <p class="step-description">
+                To get started, <a href="?" class="ola">join now.</a> You can
+                also <a href="?" class="ola">join in the app</a> to get access
+                to the full range of Starbucks<sup>®</sup> Rewards benefits.
+              </p>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-title">Order and pay how you'd like</div>
+              <p class="step-description">
+                Use cash, credit/debit card or save some time and pay right
+                through the app. You'll collect Stars all ways.
+                <a href="?" class="ola">Learn how.</a>
+              </p>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-title">Earn Stars, get Rewards</div>
+              <p class="step-description">
+                As you earn Stars, you can redeem them for Rewards - like free
+                food, drinks, and more. Start redeeming with as little as 25
+                Stars!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Abschnitt 3 -->
+
+      <section class="rewards">
+        <div class="rewards-header">
+          <h2>Get your favorites for free</h2>
+          <div class="rewards-tabs">
+            <span class="active">25<small>★</small></span>
+            <span>50<small>★</small></span>
+            <span>150<small>★</small></span>
+            <span>200<small>★</small></span>
+            <span>400<small>★</small></span>
+          </div>
+        </div>
+
+        <div class="rewards-content">
+          <div class="drink-images">
+            <div class="espresso-cup">
+              <div class="drink-images">
+                <img
+                  src="images/coffee-drinks.png"
+                  alt="Espresso und Latte"
+                  class="coffee-drinks"
+                />
+              </div>
+            </div>
+
+            <div class="latte-cup">
+              <div class="latte-handle"></div>
+              <div class="latte-foam"></div>
+              <div class="latte-coffee"></div>
+            </div>
+          </div>
+
+          <div class="rewards-description">
+            <h3>Customize your drink</h3>
+            <p>
+              Make your drink just right with an extra espresso shot, dairy
+              substitute or a dash of your favorite syrup.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
