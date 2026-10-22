@@ -1,0 +1,87 @@
+/* Abschnitt 2 */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+sup {
+  font-size: 0.5em;
+}
+.ola {
+  color: #008248;
+}
+.container2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.abschnitt2 {
+  width: 100%;
+  min-height: 65vh;
+  background-color: #f3f1e7;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#ab2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+#p-ab2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 1rem 0px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.step-number {
+  color: #008248;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  border: 1.5px solid #008248;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.step-title {
+  font-size: 20px;
+  font-weight: 600;
+  min-height: 48px;
+}
+
+.step-description {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
