@@ -1,0 +1,85 @@
+.Abschnitt5 {
+  padding: 48px 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #1e1e1e;
+  background: #f3f1e7;
+}
+
+.Abschnitt5-Titel {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.Abschnitt5-Intro {
+  max-width: 440px;
+  margin: 0 auto 48px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.A5row {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 32px;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 32px 0;
+  border-bottom: 1px solid #d4d1cc;
+}
+
+.A5row:last-child {
+  border-bottom: none;
+}
+
+.A5row__rate {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.A5row__sub {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.A5row__rate .star {
+  font-size: 0.7em;
+  vertical-align: middle;
+}
+
+.A5feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.A5feature img {
+  flex-shrink: 0;
+  width: 60px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.A5feature__text {
+  max-width: 190px;
+}
+
+.A5feature__text h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.A5feature__text p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.A5feature__text a {
+  color: #1e3932;
+}
