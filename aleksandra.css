@@ -14,19 +14,19 @@ sup {
 }
 .abschnitt2 {
   width: 100%;
-  min-height: 55vh;
+  min-height: 40vh;
   background-color: white;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
+  padding: 48px;
 }
 
 #ab2 {
   text-align: center;
   color: #172b27;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   margin: 0 0 18px;
 }
@@ -35,7 +35,7 @@ sup {
   text-align: center;
   color: #172b27;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   margin: 0 0 30px;
 }
 
@@ -75,7 +75,7 @@ sup {
 }
 
 .step-title {
-  font-size: 18px;
+  font-size: 16px;
   color: #172b27;
   font-weight: 600;
   min-height: 30px;
@@ -84,7 +84,7 @@ sup {
 
 .step-description {
   margin: 0px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
   color: #172b27;
@@ -143,19 +143,19 @@ sup {
 
 .abschnitt4 {
   width: 100%;
-  min-height: 60vh;
+  min-height: 40vh;
   background-color: white;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 48px;
 }
 
 #ab4 {
   text-align: center;
   color: #172b27;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   margin: 0 0 18px;
 }
@@ -164,7 +164,7 @@ sup {
   max-width: 600px;
   text-align: center;
   color: #172b27;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
   margin: 0 0 40px;
@@ -196,14 +196,14 @@ sup {
 
 .extra-title {
   color: #172b27;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin: 0 0 12px;
 }
 
 .extra-description {
   color: #172b27;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
   margin: 0 0 20px;
